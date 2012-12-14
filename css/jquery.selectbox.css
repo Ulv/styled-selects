@@ -102,8 +102,8 @@
 	border: solid 1px #999999;
 	list-style: none;
 	left: -1px;
-	margin-top: 5px;
-	padding: 0;
+    margin: 5px 0 0 0 !important;
+	padding: 0 !important;
 	position: absolute;
 	top: 26px !important;
 	width: 208px;
@@ -246,3 +246,10 @@ background-image: -webkit-gradient(
     color: #fff !important;
 }
 
+.ad_tbl td {
+    text-align: center;
+}
+
+.ad_tbl p {
+    font-size: 16px;
+}
