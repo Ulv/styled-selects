@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery SelectBox plugin</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<link href="css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+    <div class="dwrap">
+    <select name="averageAccount" data-placeholder="Средний счет" class="ddown">
+        <option value="1">10-50 $</option>
+        <option value="2">50-100 $</option>
+        <option value="3">100-300 $</option>
+        <option value="4">больше 300 $</option>
+    </select>
+    </div>
+    <div class="dwrap">
+    <select name="type" class="ddown" data-placeholder="Тип заведения">
+        <option value="1">Банкетный зал</option>
+        <option value="2">Пекарня</option>
+        <option value="3">Винотека</option>
+        <option value="4">Бар</option>
+    </select>
+    </div>
+    <div class="dwrap">
+    <select name="kitchen" class="ddown" data-placeholder="Кухня">
+        <option value="1">Европейская</option>
+        <option value="2">Кавказская</option>
+        <option value="3">Японская</option>
+        <option value="4">Китайская</option>
+    </select>
+    </div>
+
+    <input type="submit" class="dsubmit" value="Поиск" />
+<p>1</p>
+    <a href="#" class="button roundedcorners"><span>Популярные</span></a>
+    <a href="#" class="button roundedcorners">Рекомендуем заведения</a>
+    <a href="#" class="button roundedcorners">Новые</a>
+<p>1</p>
+    <a href="#" class="button">Найти информацию</a>
+
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+		<script type="text/javascript">
+		$(function () {
+			$(".ddown").selectbox();
+
+		});
+		</script>
+	</body>
+</html>
